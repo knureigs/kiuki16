@@ -5,10 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lecture KIUKI-16</title>
+    <link rel="stylesheet" href="addedstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    strong {
+    background-color: olivedrab;
+    color: white;
+}
+        p{
+            color :orchid;
+        }
+input[required] {
+    border-color: crimson;
+}
+.veryimportant {
+    color :red;
+}
+#text1{
+    color :green;
+}
+        /* div {
+            color :orchid;
+        } */
+        a {
+            color :#0000ff;
+        }
+        a::before {
+            content:"Hello!!!"
+        }
+        a:hover {
+            color :#00ff00;
+        }
+        p::first-line {
+            font-size: 18pt;
+        }
+    </style>
 </head>
 <body>
+    <a href="#">Link!!!!!</a>
+    <form action="#" method="post">
+        <input type="text" name="text1" id="text1" value="qwerty">
+        <input class="veryimportant" type="text" name="text2" id="text2" value="asdf" required>
+        <input type="submit" value="submit" id="text1">
+    </form>
     H<sub>2</sub>O
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quos debitis doloribus nemo, assumenda deleniti perspiciatis animi laborum quidem, ipsum, reiciendis neque tempora iusto similique consequuntur ad minus corrupti consectetur.</p>
+    <p class="veryimportant">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quos debitis doloribus nemo, assumenda deleniti perspiciatis animi laborum quidem, ipsum, reiciendis neque tempora iusto similique consequuntur ad minus corrupti consectetur.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, magni laborum ex dolores nobis excepturi nesciunt laboriosam amet ut tempore unde, mollitia, architecto ipsa quidem non officia accusamus eligendi similique! Tenetur nobis dignissimos, maiores dicta nesciunt laudantium illo voluptates perferendis. Dolorum nobis aut ipsum porro fuga tenetur accusamus nulla, adipisci quisquam velit eos facere amet.
     </p>
     <div><b>Lorem</b> <i>ipsum</i> dolor sit amet.</div>
