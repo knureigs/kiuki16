@@ -8,29 +8,36 @@
     <link rel="stylesheet" href="addedstyle.css">
     <link rel="stylesheet" href="style.css">
     <style>
-    strong {
-    background-color: olivedrab;
-    color: white;
-}
+        strong {
+            background-color: olivedrab;
+            color: white;
+        }
         p{
             color :orchid;
         }
-input[required] {
-    border-color: crimson;
-}
-.veryimportant {
-    color :red;
-}
-#text1{
-    color :green;
-}
-        /* div {
-            color :orchid;
-        } */
-        a {
-            color :#0000ff;
+        input[required] {
+            border-color: crimson;
         }
-        a::before {
+        .veryimportant {
+           color :red;
+        }
+        #text1{
+            color :green;
+        }
+
+        /* a {
+            background-color: aqua;
+        }
+        a[href*="itech"] {
+            background-color:blue;
+        } */
+
+        a[class|="mylink"] {
+            background-color:blueviolet;
+        }
+
+
+        /* a::before {
             content:"Hello!!!"
         }
         a:hover {
@@ -38,12 +45,19 @@ input[required] {
         }
         p::first-line {
             font-size: 18pt;
-        }
+        } */
     </style>
 </head>
 <body>
+    <a href="#" target="_self" class = "mylink">Link1</a><br>
+    <a href="#text2" target="_blank" class = "mylink-warning">Link2</a><br>
+    <a href="https://knureigs.github.io/itech/" target="_blank">Link3</a><br>
+    <a href="http://dec.nure.ua/" target="_blank">Link4</a><br>
+    <a href="https://knureigs.github.io/itech/lb/ITech1_Lab1/index.html">Link5</a> <br>
+    <br>
+    <br>
     <a href="#">Link!!!!!</a>
-    <form action="#" method="post">
+    <form action="" method="get">
         <input type="text" name="text1" id="text1" value="qwerty">
         <input class="veryimportant" type="text" name="text2" id="text2" value="asdf" required>
         <input type="submit" value="submit" id="text1">
