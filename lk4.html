@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function clickButton() {
+            let tab = document.getElementById("table");
+            let bestStud = tab.rows[2].cells[0];
+            console.log(bestStud.innerText);
+        }
+    </script>
+</head>
+<body>
+    <body>
+        <table class='table' id="table" border='1'>
+      <tr><th>FIO</th><th>Score</th></tr>
+      <tr><td>Ivanov</td><td>60</td></tr>
+      <tr><td>Petrov</td><td>75</td></tr>
+      <tr><td>Sidorov</td><td>60</td></tr>
+      </table>
+      
+      <button onclick="clickButton()">Click!</button>
+</body>
+</html>

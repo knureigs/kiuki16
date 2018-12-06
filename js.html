@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        function incrValue() {
+            var qwerty = document.getElementById("qwerty");
+            //console.dir(qwerty);
+            //alert(qwerty.value);
+            qwerty.value = +qwerty.value + 1;
+        }
+
+        function setText(str) {
+            var qwerty = document.getElementById("qwerty");
+            //console.dir(qwerty);
+            //alert(qwerty.value);
+            qwerty.value = str;
+        }
+        function writeDoc(str) {
+            document.write(str);
+        }
+
+
+        // document.write("Hello!");
+
+
+        // if(confirm("Need set your name?")) {
+        //     alert(prompt("Set name:"));
+        // }
+        // else {
+        //     alert("Hello!");
+        // }
+
+
+
+        // alert("Hello!");
+
+
+        // console.dir(document);
+
+
+        // console.log("1.1 Hello!");
+        // console.log("Hello!");
+        // console.log("Hello, %s!", "User");
+        // console.log("Hello!");
+        // console.debug("Hello!");
+        // console.info("Hello!");
+        // console.warn("Hello!");
+        // console.error("Hello!");
+    </script>
+</head>
+<body>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, odit.</div>
+    <input type="button" value="WRITE" onclick="writeDoc('Hello!')">
+    <input type="button" value="SET" onclick="setText('Hello!')">
+    <input type="button" value="INCR" onclick="incrValue()">
+    <input type="text" name="qwerty" id="qwerty" value="1">
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, odit.</div>
+</body>
+</html>
