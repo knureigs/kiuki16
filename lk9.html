@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="oop.js"></script> -->
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    // ctx.fillRect(0,0, canvas.width, canvas.height);
+    // ctx.clearRect(0,0, canvas.width/2, canvas.height/2);
+    ctx.beginPath();
+    ctx.arc(100,100, 50, 0, Math.PI*2, true);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.moveTo(0,0);
+    ctx.lineTo(100,100);
+    ctx.moveTo(200,0);
+    ctx.lineTo(100,100);
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+    ctx.closePath();
+
+</script>
+
+
+    <script>
+        // var params = {
+        //     body: "Notify!!!!!",
+        //     tag:"",
+        //     icon:"ic_chats.png"
+        // }
+        // var notify = new Notification("Theme", params);
+        // notify.onclick = function() {
+        //     location = "dsfhdskjfk";
+        // }
+        // console.dir(notify);
+        </script>
+
+</body>
+</html>
