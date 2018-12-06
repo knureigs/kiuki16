@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function clickButton() {
+            // var tab = document.body.children[0];
+            // var tab = document.getElementById("table");
+            // var tab = document.getElementsByClassName("table");
+            var tab = document.getElementsByTagName("table")[0];
+
+            var maxScore = tab.rows[1].cells[1].innerHTML*1;
+            var bestStud = tab.rows[1].cells[0].innerHTML;
+            for (var i=2; i<tab.rows.length;i++) {
+                var currentScore = tab.rows[i].cells[1].innerHTML*1;
+                if(currentScore>maxScore) {
+                    maxScore=currentScore;
+                    bestStud=tab.rows[i].cells[0].innerHTML;
+                }
+
+            }
+                console.log(bestStud);
+
+            //console.dir(tab);
+            //console.dir(document.body);
+        }
+    </script>
+</head>
+<body>
+    <body>
+        <table class='table' id="table" border='1'>
+      <tr><th>FIO</th><th>Score</th></tr>
+      <tr><td>Ivanov</td><td>60</td></tr>
+      <tr><td>Petrov</td><td>75</td></tr>
+      <tr><td>Sidorov</td><td>67</td></tr>
+      </table>
+      
+      <button onclick="clickButton()">Click!</button>
+</body>
+</html>
